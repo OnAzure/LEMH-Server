@@ -122,14 +122,14 @@ In the future, you can restart Nginx by typing `sudo service nginx restart`
 
 ### **HHVM**
 ```
- Add the repository from hhvm.com to the Ubuntu repository file /etc/apt/sources.list and update the repository:
-```
+ Add the repository from hhvm.com to the Debian repository file /etc/apt/sources.list and update the repository:
 wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | apt-key add -
 
 echo deb http://dl.hhvm.com/debian jessie main | tee /etc/apt/sources.list.d/hhvm.list
 
 sudo apt-get update
 ```
+
 Then install the HHVM package:
 ```
 sudo apt-get update && apt-get install hhvm -y
